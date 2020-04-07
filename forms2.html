@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+                <meta charset="utf-8">
+                <title>forms2</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        </head>
+        <body>
+                <form class="container">
+                        <div class="form-group">
+                                <label for="withoutFormControlInput1">Email address</label>
+                                <input type="email" id="withoutFormControlInput1" placeholder="name@example.com">
+
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlSelect1">Single Select Input</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlSelect2">Multiple select type Input</label>
+                                <select multiple class="form-control" id="exampleFormControlSelect2">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Text area</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="exampleFormControlFile1">Upload a file:</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+
+                        <h2>Sizing of Input :</h2>
+                        <div class="form-group">
+                               <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg Class">
+                               <input class="form-control" type="text" placeholder="Default input ">
+                               <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm Class">
+                        </div>
+
+
+                        <h2>Sizing of Select type Input</h2>
+                        <div class="form-group">
+                               <select class="form-control form-control-lg" name="SelectInput">
+                                       <option value="Large">1</option>
+                                       <option value="Medium">2</option>
+                                       <option value="Small">3</option>
+
+                               </select>
+                               <select class="form-control form-control-lg" name="SelectInput">
+                                       <option value="Large">1</option>
+                                       <option value="Medium">2</option>
+                                       <option value="Small">3</option>
+
+                               </select>
+                               <select class="form-control form-control-sm" name="SelectInput">
+                                       <option value="Large">1</option>
+                                       <option value="Medium">2</option>
+                                       <option value="Small">3</option>
+
+                               </select>
+                        </div>
+                        <div class="form-group">
+                                <label for="formControlRange">Example Range input</label>
+                                <input type="range" class="form-control-range" id="formControlRange">
+                        </div>
+
+                        <h2>Checkbox type input </h2>
+                        <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                        Default checkbox
+                                </label>
+                        </div>
+                        <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                                <label class="form-check-label" for="defaultCheck2">
+                                        Disabled checkbox
+                                </label>
+                        </div>
+
+                        <h2>Radio Input Botton</h2>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                        Default radio
+                                </label>
+                        </div>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                        Second default radio
+                                </label>
+                        </div>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                                <label class="form-check-label" for="exampleRadios3">
+                                        Disabled radio
+                                </label>
+                        </div>
+                        <h4>Checkbox in one line using .form-check-inline class with .form-check</h4>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                        </div>
+                        <h4>Radio buttons in one line .form-check-inline and .form-check Class</h4>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                        </div>
+                        <h4>form-group class using layout grid</h4>
+                        <div class="form-group">
+                                <label for="formGroupExampleInput">Example label</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                        </div>
+                        <div class="form-group">
+                                <label for="formGroupExampleInput2">Another label</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                        </div>
+
+                        <h4>.form-group class and .row / .form-row class</h4>
+                        <div class="row">
+                                <div class="col">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                        </div>
+
+                </form>
+        </body>
+</html>
