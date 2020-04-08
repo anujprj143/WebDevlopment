@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+                <meta charset="utf-8">
+                <title>Assessment2HTML</title>
+        </head>
+      <!-- Without using <label for=""></label> <body>
+              <h1>Course SIgn Up Page</h1>
+              <h3>Please Note-:First Name, Password, and Email are required </h3>
+              <form action="thankyou.html"method="get">
+                      First Name:
+                      <input type="text" name="Last name" placeholder="First Name" required>
+                      Last Name:
+                      <input type="text" name="Last name" placeholder="Last Name"><br><br>
+                      Email:
+                      <input type="email" name="Mail" placeholder="user@gmail.com" required>
+                      Password:
+                      <input type="password" name="Password" value="password"><br><br>
+                      Are you over the age of 18 ?<br><br>
+                      Yes:
+                      <input type="radio" name="age" value="Above 18 Year">
+                      No:
+                      <input type="radio" name="age" value="Below 18 Year"><br><br>
+                      Choose a payment option:
+
+                      <select name="Payment option"><br>
+                              <option value="Credit Card">Credit Card</option>
+                              <option value="Phone Pay">Phone Pay</option>
+                              <option value="G-Pay">G-Pay</option>
+
+                      </select><br><br>
+                      <input type="submit" name="Sign Up" value="Sign Up">
+              </form>
+
+        </body> -->
+        <body>
+              <h1>Course SIgn Up Page</h1>
+              <h3>Please Note-:First Name, Password, and Email are required </h3>
+              <form action="thankyou.html"method="get">
+                      <label for="fn">First Name:</label>
+                      <input id="fn" type="text" name="Last name" placeholder="First Name" required>
+                      <label for="ln">Last Name:</label>
+                      <input id="ln" type="text" name="Last name" placeholder="Last Name"><br><br>
+                      <label for="mail">Email:</label>
+                      <input id="mail" type="email" name="Mail" placeholder="user@gmail.com" required>
+                      <label for="pass">Password:</label>
+                      <input type="password" name="Password" placeholder="password"><br><br>
+                      Are you over the age of 18 ?<br><br>
+                      <label for="age">Yes:</label>
+                      <input id="age" type="radio" name="age" value="Above 18 Year">
+                      <label for="age">No</label>
+                      <input id="age" type="radio" name="age" value="Below 18 Year"><br><br>
+                      Choose a payment option:
+
+                      <select name="Payment option"><br>
+                              <option value="Credit Card">Credit Card</option>
+                              <option value="Phone Pay">Phone Pay</option>
+                              <option value="G-Pay">G-Pay</option>
+
+                      </select><br><br>
+                      <input type="submit" name="Sign Up" value="Sign Up">
+              </form>
+              <p>Any suggestion here:</p>
+              <textarea name="Kuchh Bhi" rows="8" cols="80"></textarea>
+
+        </body>
+</html>
