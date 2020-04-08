@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+        <head>
+                <meta charset="utf-8">
+                <title>Level1_CSS_Assessment</title>
+        </head>
+        <style media="screen">
+                body{
+                        background-color: pink;
+                }
+                h1{
+                      border: 1px solid black;
+                }
+                h1 + p{
+                       background-color: yellow;
+                }
+                h2{
+                        color: purple;
+                }
+                Input{
+                        border: 2px solid gray;
+                }
+                #first{
+                       color: red;
+                       text-decoration: overline;
+                }
+
+                #firsttext{
+                        border: 5px solid gray;
+                }
+
+
+                div{
+                        background-color: violet;
+                        border: 5px dotted yellow;
+                }
+                h3{
+                    background-color: yellow;
+                }
+
+        </style>
+        <body>
+                <h1>Welcome to Free Blog! </h1>
+
+                <p id='p1'>Thanks so much for visiting this site! </p>
+                <h2>What is this site for ? </h2>
+
+                <ol>
+                        <li id='first'>Take in text input</li>
+                        <li>Take in Log in information </li>
+                        <li id="last"><a href="https://www.google.com">Take you to Google</a></li>
+
+                </ol>
+                <textarea id=firsttext name="Text" rows="10" cols="80"></textarea>
+                <h2>Please log in to save your blog post</h2>
+                <label for="Email">Email</label>
+                <input id="Email" type="email" name="Input" placeholder="user@gmail.com" required>
+                Password
+                <input type="password" name="input" value="Password" required>
+                <input type="submit" name="Input" value="submit">
+
+
+                <div class="Div">
+                        <br>
+                        <p><h3>Question or Comments? Send us Feedback Here: </h3></p>
+                        <textarea name="secondtext" rows="8" cols="80"></textarea>
+                </div>
+
+        </body>
+</html>
