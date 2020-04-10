@@ -4,32 +4,41 @@
                 <meta charset="utf-8">
                 <title>Clock</title>
 
-        </head>
-        <style media="screen">
-
-        </style>
-        <script type="text/javascript">
-                function timerTick() {
-                             with (new Date()) {
-                                     var h, m, s; h = 30 * ((getHours() % 12) + getMinutes() / 60);
-                                     m = 6 * getMinutes();
-                                     s = 6 * getSeconds();
-                                     document.getElementById('hour').setAttribute('transform', 'rotate(' + h + ', 50, 50)');
-                                     document.getElementById('minute').setAttribute('transform', 'rotate(' + m + ', 50, 50)');
-                                     document.getElementById('second').setAttribute('transform', 'rotate(' + s + ', 50, 50)');
-                                     setTimeout(timerTick, 1000);
+                <style>
+                #container{
+                        height: 100%;
+                        width: 100%;
+                }
+                #clock {stroke-linecap: round;}
+                #surface{stroke-width: 5px;}
+                #hour {stroke-width: 5px;}
+                #second {stroke-width: 1px;}
+                #minute{stroke-width: 3px;}
+                #numbers {font-family: sans-serif; font-size: 80%;}
+                </style>
+                <script>
+                        function timerTick() {
+                                     with (new Date()) {
+                                             var h, m, s; h = 30 * ((getHours() % 12) + getMinutes() / 60);
+                                             m = 6 * getMinutes();
+                                             s = 6 * getSeconds();
+                                             document.getElementById('hour').setAttribute('transform', 'rotate(' + h + ', 50, 50)');
+                                             document.getElementById('minute').setAttribute('transform', 'rotate(' + m + ', 50, 50)');
+                                             document.getElementById('second').setAttribute('transform', 'rotate(' + s + ', 50, 50)');
+                                             setTimeout(timerTick, 1000);
+                                     }
                              }
-                     }
-        </script>
+                </script>
+        </head>
 
         <!-- bofy of the html completed -->
-        <body onload="timerTick">
-                <table id="container">
+        <body onload='timerTick()'>
+                <table id='container'>
                         <!-- designing basic circle for the clock -->
                         <tr>
-                                <td align = "center"></td>
-                                <svg id="clock" viewBox = '0 0 100 100' width= '400' height='400'>
-                                        <circle id='surface' cx='50' cy='50' r='47' fill="red" stroke="#000"/>
+                                <td align="center">
+                                <svg id="clock" viewBox='0 0 100 100' width='350' height='350'>
+                                        <circle id='surface' cx='50' cy='50' r='47.5' fill="red" stroke="#000"/>
 
                                                 <!-- creating hand of a clock ..i.e. second minute and hour -->
                                                <g id="pointers">
@@ -54,9 +63,7 @@
                                                         <text x='43' y='18'>12</text>
                                                 </g>
                                 </svg>
-                        </tr>
+                       </td></tr>
                 </table>
-
-
         </body>
 </html>
