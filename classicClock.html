@@ -11,7 +11,17 @@
         <script type="text/javascript">
 
         </script>
-        <body>
+        <body onload="timerTick">
+                <table id="container">
+                        <!-- designing basic circle for the clock -->
+                        <tr>
+                                <td align = "center"></td>
+                                <svg id="clock" viewBox = '0 0 100 100' width= '350' height='350'>
+                                        <circle id='surface' cx='50' cy='50' r='47' fill="red" stroke="#000">
+                                </svg>
+                        </tr>
+                </table>
+
 
         </body>
 </html>
